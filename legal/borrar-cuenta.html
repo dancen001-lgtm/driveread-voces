@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Borrar tu cuenta de DriveRead</title>
+<meta name="description" content="Cómo borrar tu cuenta de DriveRead y qué datos se eliminan.">
+<style>
+  :root {
+    --bg: #121010; --superficie: #1c1917; --texto: #f3ede4;
+    --apagado: #9a9088; --borde: #2e2a26; --acento: #f0ab3e;
+    color-scheme: dark;
+  }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-tema="noche"]) {
+      --bg: #faf6ef; --superficie: #fff; --texto: #1c1917;
+      --apagado: #6b625a; --borde: #e3dcd1; --acento: #b2741a;
+      color-scheme: light;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--texto);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    padding: 2.5rem 1rem 4rem;
+  }
+  main { max-width: 38rem; margin: 0 auto; }
+  h1 { font-size: 1.7rem; line-height: 1.2; margin: 0 0 .3rem; }
+  h2 { font-size: 1.1rem; margin: 2.2rem 0 .6rem; }
+  .marca { color: var(--acento); font-weight: 700; letter-spacing: .02em; }
+  .entradilla { color: var(--apagado); margin: 0 0 2rem; }
+  ol, ul { padding-left: 1.2rem; }
+  li { margin: .35rem 0; }
+  table { width: 100%; border-collapse: collapse; margin: .6rem 0; font-size: .94rem; }
+  th, td { text-align: left; padding: .6rem .5rem; border-bottom: 1px solid var(--borde); vertical-align: top; }
+  th { color: var(--apagado); font-weight: 600; font-size: .8rem; text-transform: uppercase; letter-spacing: .04em; }
+  .caja {
+    background: var(--superficie); border: 1px solid var(--borde);
+    border-radius: 12px; padding: 1rem 1.1rem; margin: 1.2rem 0;
+  }
+  .caja p:first-child { margin-top: 0; }
+  .caja p:last-child { margin-bottom: 0; }
+  a { color: var(--acento); }
+  footer { margin-top: 3rem; color: var(--apagado); font-size: .85rem; }
+</style>
+</head>
+<body>
+<main>
+  <p class="marca">DriveRead</p>
+  <h1>Borrar tu cuenta</h1>
+  <p class="entradilla">
+    Podés borrarla vos, desde la app, en menos de un minuto. No hace falta
+    pedir permiso ni esperar a que alguien conteste.
+  </p>
+
+  <h2>Desde la app</h2>
+  <ol>
+    <li>Abrí <strong>Ajustes</strong>.</li>
+    <li>Entrá en <strong>Tu cuenta</strong>.</li>
+    <li>Abajo del todo, <strong>Borrar mi cuenta</strong>.</li>
+    <li>Escribí <strong>BORRAR</strong> para confirmar.</li>
+  </ol>
+  <p>Se borra en el momento. No hay plazo de gracia ni forma de recuperarla.</p>
+
+  <h2>Si ya no tenés la app</h2>
+  <p>
+    Escribí a <a href="mailto:dancen001@gmail.com">dancen001@gmail.com</a>
+    desde el correo de la cuenta. Se borra dentro de los 30 días siguientes,
+    normalmente el mismo día.
+  </p>
+
+  <h2>Qué se borra</h2>
+  <table>
+    <tr><th>Dato</th><th>Qué pasa</th></tr>
+    <tr><td>Tu cuenta y tu correo</td><td>Se borran</td></tr>
+    <tr><td>Tu perfil: nombre, avatar, marco</td><td>Se borra</td></tr>
+    <tr><td>Por dónde ibas en cada libro</td><td>Se borra</td></tr>
+    <tr><td>Tus recortes guardados</td><td>Se borran</td></tr>
+    <tr><td>Tu puesto en la vitrina de lectores</td><td>Se borra</td></tr>
+    <tr>
+      <td>Las sugerencias que hayas mandado</td>
+      <td>Se despegan de vos: se les quita tu usuario y tu correo y queda
+          solo el texto, sin forma de saber quién lo escribió</td>
+    </tr>
+  </table>
+
+  <div class="caja">
+    <p><strong>Tus libros no están acá, así que no hay nada que borrar.</strong></p>
+    <p>
+      El contenido de tus PDF nunca sale de tu teléfono. Lo único que viaja
+      al servidor es por dónde vas leyendo, para que puedas seguir en otro
+      aparato. Al borrar la cuenta, tus libros siguen en el teléfono como
+      estaban.
+    </p>
+  </div>
+
+  <h2>Cuánto se conserva</h2>
+  <p>
+    Nada después del borrado, salvo lo que exija la ley. Las copias de
+    seguridad del servidor se rotan solas y la información desaparece de
+    ellas en un plazo máximo de 30 días.
+  </p>
+
+  <footer>
+    DriveRead · com.dancen.driveread<br>
+    Contacto: <a href="mailto:dancen001@gmail.com">dancen001@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>
