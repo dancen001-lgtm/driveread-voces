@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacidad de DriveRead</title>
+<meta name="description" content="Qué datos recoge DriveRead, qué hace con ellos y qué nunca sale de tu teléfono.">
+<style>
+  :root {
+    --bg:#121010; --superficie:#1c1917; --texto:#f3ede4;
+    --apagado:#9a9088; --borde:#2e2a26; --acento:#f0ab3e;
+    color-scheme: dark;
+  }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-tema="noche"]) {
+      --bg:#faf6ef; --superficie:#fff; --texto:#1c1917;
+      --apagado:#6b625a; --borde:#e3dcd1; --acento:#b2741a;
+      color-scheme: light;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin:0; background:var(--bg); color:var(--texto);
+    font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    padding:2.5rem 1rem 4rem;
+  }
+  main { max-width:38rem; margin:0 auto; }
+  h1 { font-size:1.7rem; line-height:1.2; margin:0 0 .3rem; }
+  h2 { font-size:1.1rem; margin:2.3rem 0 .6rem; }
+  .marca { color:var(--acento); font-weight:700; letter-spacing:.02em; }
+  .entradilla { color:var(--apagado); margin:0 0 .4rem; }
+  .fecha { color:var(--apagado); font-size:.85rem; margin:0 0 2rem; }
+  ul { padding-left:1.2rem; }
+  li { margin:.35rem 0; }
+  table { width:100%; border-collapse:collapse; margin:.6rem 0; font-size:.94rem; }
+  th,td { text-align:left; padding:.6rem .5rem; border-bottom:1px solid var(--borde); vertical-align:top; }
+  th { color:var(--apagado); font-weight:600; font-size:.8rem; text-transform:uppercase; letter-spacing:.04em; }
+  .caja { background:var(--superficie); border:1px solid var(--borde); border-radius:12px; padding:1rem 1.1rem; margin:1.3rem 0; }
+  .caja p:first-child { margin-top:0; } .caja p:last-child { margin-bottom:0; }
+  a { color:var(--acento); }
+  footer { margin-top:3rem; color:var(--apagado); font-size:.85rem; }
+</style>
+</head>
+<body>
+<main>
+  <p class="marca">DriveRead</p>
+  <h1>Privacidad</h1>
+  <p class="entradilla">
+    Esto está escrito para entenderse, no para cubrirse las espaldas.
+  </p>
+  <p class="fecha">Última actualización: 19 de noviembre de 2026 ·
+    <a href="privacy.html">In English</a></p>
+
+  <div class="caja">
+    <p><strong>Lo más importante, primero: tus libros no salen de tu teléfono.</strong></p>
+    <p>
+      El texto de tus PDF, las fotos que tomás al escanear y el texto que se
+      reconoce de ellas se quedan en el aparato. No se suben a ningún
+      servidor, ni al nuestro ni al de nadie. El reconocimiento de letras
+      corre dentro del teléfono, sin internet.
+    </p>
+    <p>
+      <strong>Y no hay anuncios ni rastreadores</strong>, en ningún plan. No
+      se mide tu comportamiento ni se vende nada a nadie.
+    </p>
+  </div>
+
+  <h2>Sin cuenta</h2>
+  <p>
+    La app funciona sin registrarse, y así no se recoge casi nada. Lo único
+    que sale del teléfono es:
+  </p>
+  <ul>
+    <li>La respuesta a la pregunta de bienvenida —para qué vas a usar la
+      app—, junto a un número al azar del aparato que no dice quién sos.</li>
+    <li>Las sugerencias que decidas mandar, si las mandás.</li>
+  </ul>
+
+  <h2>Con cuenta</h2>
+  <p>
+    La cuenta existe para que tu avance te siga entre aparatos. Para eso se
+    guarda esto en el servidor:
+  </p>
+  <table>
+    <tr><th>Dato</th><th>Para qué</th></tr>
+    <tr><td>Tu correo</td><td>Identificar la cuenta y poder recuperarla</td></tr>
+    <tr><td>El nombre del libro, cuántas páginas tiene y por dónde vas</td>
+        <td>Que puedas seguir en otro aparato donde dejaste</td></tr>
+    <tr><td>Tu nombre de lector, tu retrato y tu marco</td>
+        <td>Tu perfil y la vitrina de lectores</td></tr>
+    <tr><td>Cuánto tiempo escuchaste y cuántos libros terminaste</td>
+        <td>Tus estadísticas y la vitrina</td></tr>
+  </table>
+  <p>
+    Si entrás con Google, recibimos de Google tu correo y tu nombre. Nada
+    más: ni tus contactos, ni tu Drive, ni tu actividad.
+  </p>
+
+  <div class="caja">
+    <p>
+      <strong>Ni con cuenta sale el contenido de tus libros.</strong> Tus
+      recortes, las palabras que corregís, las estampitas que pegás y tus
+      recordatorios se quedan en el teléfono y no se suben a ninguna
+      parte. Del libro viaja el título, cuántas páginas tiene, por dónde
+      vas y si es favorito. Nada más.
+    </p>
+  </div>
+
+  <h2>Quién más ve algo</h2>
+  <table>
+    <tr><th>Quién</th><th>Qué recibe</th></tr>
+    <tr><td><a href="https://supabase.com/privacy">Supabase</a></td>
+        <td>Guarda la base de datos y las cuentas. Es donde viven los datos
+            de arriba</td></tr>
+    <tr><td>Google Play Services</td>
+        <td>El reconocimiento de letras y el escáner. Trabajan dentro del
+            teléfono; las imágenes no se envían</td></tr>
+    <tr><td>CallMeBot</td>
+        <td><strong>Solo si mandás una sugerencia:</strong> el texto de esa
+            sugerencia pasa por ese servicio para llegarnos por WhatsApp.
+            Por eso conviene no escribir datos personales ahí</td></tr>
+  </table>
+  <p>No hay publicidad ni rastreadores, y ningún otro tercero.</p>
+
+  <h2>Cuando algo le sale mal a la app</h2>
+  <p>
+    La app anota sola lo que le sale mal mientras la usás, y cada tanto
+    nos manda un parte para poder arreglarlo. Eso <strong>no se puede
+    apagar</strong>, así que te decimos exactamente qué lleva:
+  </p>
+  <ul>
+    <li>Un número al azar de la instalación, que no dice quién sos.</li>
+    <li>La versión de la app, la versión de Android y el modelo del
+        teléfono.</li>
+    <li>Qué le salió mal y cuántas veces.</li>
+  </ul>
+  <p>
+    No lleva tu nombre, ni tu correo, ni nada de tus libros. No se cruza
+    con tu cuenta. Y podés ver lo mismo que se manda, en la app, en
+    Ajustes → Cómo se portó la app, donde además podés borrarlo.
+  </p>
+
+  <h2>Borrar todo</h2>
+  <p>
+    Desde la app: <strong>Ajustes → Tu cuenta → Borrar mi cuenta</strong>.
+    Se borra en el momento y no se puede deshacer. Los pasos y el detalle de
+    qué se borra están en
+    <a href="borrar-cuenta.html">la página de borrado</a>.
+  </p>
+  <p>
+    Si ya no tenés la app, escribí a
+    <a href="mailto:dancen001@gmail.com">dancen001@gmail.com</a> desde el
+    correo de la cuenta.
+  </p>
+
+  <h2>Cuánto se guarda</h2>
+  <p>
+    Mientras tengas cuenta. Al borrarla desaparece todo, salvo de las copias
+    de seguridad del servidor, que se rotan solas en un plazo máximo de 30
+    días. Las sugerencias se conservan sin tu nombre ni tu correo.
+  </p>
+
+  <h2>Niños</h2>
+  <p>
+    DriveRead no está dirigida a menores de 13 años y no recoge datos de
+    ellos a sabiendas. Si creés que un menor creó una cuenta, escribinos y
+    la borramos.
+  </p>
+
+  <h2>Seguridad</h2>
+  <p>
+    Todo viaja cifrado. Cada quien solo puede leer sus propias filas, y eso
+    lo impone la base de datos, no solo la app. Las sugerencias y la
+    respuesta de bienvenida se pueden escribir pero no leer: nadie puede ver
+    lo que mandó otro.
+  </p>
+
+  <h2>Cambios</h2>
+  <p>
+    Si esto cambia, cambia la fecha de arriba. Si el cambio es grande, se
+    avisa dentro de la app.
+  </p>
+
+  <footer>
+    DriveRead · com.dancen.driveread<br>
+    Responsable: Daniel Centeno ·
+    <a href="mailto:dancen001@gmail.com">dancen001@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>
