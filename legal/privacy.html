@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DriveRead Privacy</title>
+<meta name="description" content="Qué datos recoge DriveRead, qué hace con ellos y qué nunca sale de tu teléfono.">
+<style>
+  :root {
+    --bg:#121010; --superficie:#1c1917; --texto:#f3ede4;
+    --apagado:#9a9088; --borde:#2e2a26; --acento:#f0ab3e;
+    color-scheme: dark;
+  }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-tema="noche"]) {
+      --bg:#faf6ef; --superficie:#fff; --texto:#1c1917;
+      --apagado:#6b625a; --borde:#e3dcd1; --acento:#b2741a;
+      color-scheme: light;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin:0; background:var(--bg); color:var(--texto);
+    font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    padding:2.5rem 1rem 4rem;
+  }
+  main { max-width:38rem; margin:0 auto; }
+  h1 { font-size:1.7rem; line-height:1.2; margin:0 0 .3rem; }
+  h2 { font-size:1.1rem; margin:2.3rem 0 .6rem; }
+  .marca { color:var(--acento); font-weight:700; letter-spacing:.02em; }
+  .entradilla { color:var(--apagado); margin:0 0 .4rem; }
+  .fecha { color:var(--apagado); font-size:.85rem; margin:0 0 2rem; }
+  ul { padding-left:1.2rem; }
+  li { margin:.35rem 0; }
+  table { width:100%; border-collapse:collapse; margin:.6rem 0; font-size:.94rem; }
+  th,td { text-align:left; padding:.6rem .5rem; border-bottom:1px solid var(--borde); vertical-align:top; }
+  th { color:var(--apagado); font-weight:600; font-size:.8rem; text-transform:uppercase; letter-spacing:.04em; }
+  .caja { background:var(--superficie); border:1px solid var(--borde); border-radius:12px; padding:1rem 1.1rem; margin:1.3rem 0; }
+  .caja p:first-child { margin-top:0; } .caja p:last-child { margin-bottom:0; }
+  a { color:var(--acento); }
+  footer { margin-top:3rem; color:var(--apagado); font-size:.85rem; }
+</style>
+</head>
+<body>
+<main>
+  <p class="marca">DriveRead</p>
+  <h1>Privacy</h1>
+  <p class="entradilla">
+    This is written to be understood, not to cover our backs.
+  </p>
+  <p class="fecha">Last updated: 19 November 2026 ·
+    <a href="privacidad.html">En español</a></p>
+
+  <div class="caja">
+    <p><strong>The most important thing first: your books never leave your phone.</strong></p>
+    <p>
+      The text of your PDFs, the photos you take when scanning and the text
+      recognised from them stay on the device. They aren't uploaded to any
+      server, ours or anyone else's. Character recognition runs inside your
+      phone, with no internet.
+    </p>
+    <p>
+      <strong>And there are no ads and no trackers</strong>, on any plan.
+      Your behaviour isn't measured and nothing is sold to anyone.
+    </p>
+  </div>
+
+  <h2>Without an account</h2>
+  <p>
+    The app works without signing up, and that way almost nothing is
+    collected. The only things that leave your phone are:
+  </p>
+  <ul>
+    <li>Your answer to the welcome question — what you'll use the app for —
+      along with a random number for the install that doesn't say who you
+      are.</li>
+    <li>Any suggestion you decide to send, if you send one.</li>
+  </ul>
+
+  <h2>With an account</h2>
+  <p>
+    The account exists so your progress follows you between devices. For
+    that, this is kept on the server:
+  </p>
+  <table>
+    <tr><th>What</th><th>Why</th></tr>
+    <tr><td>Your email</td><td>To identify the account and let you recover it</td></tr>
+    <tr><td>The book's name, how many pages it has and how far you are</td>
+        <td>So you can pick up on another device where you left off</td></tr>
+    <tr><td>Your reader name, your portrait and your frame</td>
+        <td>Your profile and the readers' showcase</td></tr>
+    <tr><td>How long you listened and how many books you finished</td>
+        <td>Your stats and the showcase</td></tr>
+  </table>
+  <p>
+    If you sign in with Google, we receive your email and your name from
+    Google. Nothing else: not your contacts, not your Drive, not your
+    activity.
+  </p>
+
+  <div class="caja">
+    <p>
+      <strong>Not even with an account does your books' content leave the
+      phone.</strong> Your clips, the words you correct, the stickers you
+      place and your reminders stay on the device and are not uploaded
+      anywhere. From the book, what travels is the title, how many pages it
+      has, how far you are and whether it's a favourite. Nothing else.
+    </p>
+  </div>
+
+  <h2>Who else sees anything</h2>
+  <table>
+    <tr><th>Who</th><th>What they get</th></tr>
+    <tr><td><a href="https://supabase.com/privacy">Supabase</a></td>
+        <td>Hosts the database and the accounts. It's where the data above
+            lives</td></tr>
+    <tr><td>Google Play Services</td>
+        <td>Character recognition and the scanner. They work inside the
+            phone; the images are not sent anywhere</td></tr>
+    <tr><td>CallMeBot</td>
+        <td><strong>Only if you send a suggestion:</strong> the text of that
+            suggestion passes through that service to reach us on WhatsApp.
+            So it's best not to write personal details there</td></tr>
+  </table>
+  <p>No advertising, no trackers, and no other third party.</p>
+
+  <h2>When something goes wrong in the app</h2>
+  <p>
+    The app notes down by itself whatever goes wrong while you use it, and
+    every so often sends us a report so it can be fixed. That
+    <strong>can't be switched off</strong>, so here is exactly what it
+    carries:
+  </p>
+  <ul>
+    <li>A random number for the install, which doesn't say who you are.</li>
+    <li>The app version, the Android version and the phone model.</li>
+    <li>What went wrong and how many times.</li>
+  </ul>
+  <p>
+    It carries no name, no email and nothing from your books. It isn't
+    linked to your account. And you can see the same thing that gets sent,
+    inside the app, under Settings → How the app behaved, where you can also
+    erase it.
+  </p>
+
+  <h2>Deleting everything</h2>
+  <p>
+    From the app: <strong>Settings → Your account → Delete my account</strong>.
+    It's deleted straight away and can't be undone. The steps and the detail
+    of what gets deleted are on
+    <a href="borrar-cuenta.html">the deletion page</a>.
+  </p>
+  <p>
+    If you no longer have the app, write to
+    <a href="mailto:dancen001@gmail.com">dancen001@gmail.com</a> from the
+    account's email address.
+  </p>
+
+  <h2>How long it's kept</h2>
+  <p>
+    As long as you have an account. When you delete it everything goes,
+    except from the server's backups, which rotate by themselves within 30
+    days at most. Suggestions are kept without your name or your email.
+  </p>
+
+  <h2>Children</h2>
+  <p>
+    DriveRead is not aimed at children under 13 and does not knowingly
+    collect their data. If you believe a child created an account, write to
+    us and we'll delete it.
+  </p>
+
+  <h2>Security</h2>
+  <p>
+    Everything travels encrypted. Each person can only read their own rows,
+    and that's enforced by the database, not just by the app. Suggestions
+    and the welcome answer can be written but not read: nobody can see what
+    someone else sent.
+  </p>
+
+  <h2>Changes</h2>
+  <p>
+    If this changes, the date above changes. If the change is a big one, you
+    are told inside the app.
+  </p>
+
+  <footer>
+    DriveRead · com.dancen.driveread<br>
+    Responsible: Daniel Centeno ·
+    <a href="mailto:dancen001@gmail.com">dancen001@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>
